@@ -1,3 +1,12 @@
 {
-    "python.defaultInterpreterPath": "C:/Users/borji/anaconda3/envs/ENV2/python.exe"
-  }  
+  "python.defaultInterpreterPath": "C:/Users/borji/anaconda3/envs/ENV3/python.exe",
+  "jupyter.kernel.defaultKernel": "Python (ENV3)",
+  "terminal.integrated.env.windows": {
+    "CONDA_DEFAULT_ENV": "ENV3"
+  },
+  "terminal.integrated.shellArgs.windows": [
+    "-NoExit",
+    "-Command",
+    "conda activate ENV3"
+  ]
+}
