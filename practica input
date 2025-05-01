@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyOWm7/Mjc6Mfsdb/cYuL0LD",
+      "authorship_tag": "ABX9TyMuJfX5CDN9JpDM4UofXW4p",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -28,13 +28,13 @@
     },
     {
       "cell_type": "code",
-      "execution_count": 5,
+      "execution_count": 8,
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
         "id": "rdzZRBWukwh5",
-        "outputId": "1c879242-b881-465f-cb1a-186ebc20a264"
+        "outputId": "ae86042b-17ec-4604-a963-5600ba173d8b"
       },
       "outputs": [
         {
@@ -43,8 +43,8 @@
           "text": [
             "Este es el string original:  \n",
             "Introduce la palabra que quieras eliminar del string original:\n",
-            "Palabra: encontrar\n",
-            "El camino está cerrado pero seguro que podemos  una alternativa\n"
+            "Palabra: una\n",
+            "El camino está cerrado pero seguro que podemos encontrar alternativa\n"
           ]
         }
       ],
@@ -56,7 +56,7 @@
         "word=input(\"Palabra: \")\n",
         "\n",
         "idx = string.find(word)\n",
-        "substring = string[:idx] + string[idx + len(word):]\n",
+        "substring = string[:idx] + string[(idx + len(word) + 1):] # el + 1 es para quitar el espacio que queda despues de eliminar la palabra elegida\n",
         "print(substring)"
       ]
     }
