@@ -1,0 +1,64 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOWm7/Mjc6Mfsdb/cYuL0LD",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Borjius01/Python-a-z/blob/main/practica%20input\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rdzZRBWukwh5",
+        "outputId": "1c879242-b881-465f-cb1a-186ebc20a264"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Este es el string original:  \n",
+            "Introduce la palabra que quieras eliminar del string original:\n",
+            "Palabra: encontrar\n",
+            "El camino está cerrado pero seguro que podemos  una alternativa\n"
+          ]
+        }
+      ],
+      "source": [
+        "string = \"El camino está cerrado pero seguro que podemos encontrar una alternativa\"\n",
+        "print(\"Este es el string original:\", \" \")\n",
+        "\n",
+        "print (\"Introduce la palabra que quieras eliminar del string original:\")\n",
+        "word=input(\"Palabra: \")\n",
+        "\n",
+        "idx = string.find(word)\n",
+        "substring = string[:idx] + string[idx + len(word):]\n",
+        "print(substring)"
+      ]
+    }
+  ]
+}
