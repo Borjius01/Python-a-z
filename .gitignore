@@ -29,6 +29,7 @@ data/
 # ⚙️ Archivos técnicos de Conda
 *.lock
 conda-meta/
+Tempdf/
 
 # ��� Entorno completo (no subir a GitHub)
 environment_full.yml
